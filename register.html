@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="css/style_aanmelden.css">
+    <title>Registreren</title>
+    </head>
+    <body>
+        <header>
+            <img src="assets/image/logo.png" alt="Logo van de NS">
+            <h1></h1>
+
+
+            <nav>
+                
+
+                <ul>
+                    <li><a href="index.html">Overzicht</a></li>
+                    <li><a href="index.html">Mijn lijst</a></li>
+                </ul>
+            </nav>
+
+           
+            <input type="text" name="zoeken" placeholder="Jouw zoekopdracht">
+            <img src="assets/image/zoeken_icon.png" alt="zoeken icoon">
+            <a href="login.html"><img src="assets/image/login_icon.png" alt="login icoon"></a>
+        </header>
+
+<form>
+      <fieldset>
+        <legend>Registreer hier uw account:</legend>
+     
+      <label for="naam">Wat is uw naam:</label>
+      <input type="text" name="naam" placeholder="Arjan van Hoogte" id="naam" required="">
+      <label for="email">Wat is uw emailadres:</label>
+      <input type="email" name="email" placeholder=" nsverhalen@snelreizen.nl" id="email" required="">
+      <label for="ww">Bedenk een nieuw wachtwoord:</label>
+      <input type="password" name="ww" placeholder="" id="ww" required="">
+      <label for="hww">Herhaal dit wachtwoord:</label>
+      <input type="password" name="hhw" id="hww" required="">
+      <input id="registreren" class="button" type="submit" value="Nu registreren" onclick="ShowMessage()">
+
+      <div id="popup"></div>
+       
+    </fieldset>
+</form>
+
+</body>
+<script src="js/index.js"></script>
+</html>
+
+

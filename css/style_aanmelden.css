@@ -1,0 +1,458 @@
+/*Dit is de styling van de aanmeld formulieren pagina*/
+
+
+/*Colors used: #e5e5e8; grey
+#e9c84e; yellow
+rgba(255, 201, 23, 1); geel
+rgba (0, 48, 130, 1);
+Font-style: Segoe UI*/
+/*var color: (--nsyellow);*/
+
+/*border-style: solid, 0.5em, #fff; */
+/*background-color: rgba(255, 201, 23, 1); yellow*/
+    /*background-color: hsla(0, 0%, 100%, .9); DOORZICHTIG*/
+    /*box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);*/
+
+
+    /*alle boxsizings eruit rbehalve bij reset*/
+    /*alle comments eruit*/
+
+
+
+/*:root{
+    --nsyellow: rgba(255, 201, 23, 1);
+    --nsblue: rgba(0, 48, 130, 1);
+}*/
+@font-face {
+    font-family: "segoe UI";
+    src: url('../assets/fonts/segoeui.ttf') format('truetype');
+}
+
+body,
+body * {
+    font-family: "segoe UI", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*HEADER*/
+header {
+    background-color: hsla(0, 0%, 100%, .9);
+    width: 100%;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    position: fixed;
+    top: 0.2rem;
+    z-index: 99;
+    height: 3.5rem;
+}
+
+header > img:last-of-type {
+    
+        margin-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+}
+
+img[src="assets/image/logo.png"] {
+/*    Het logo van de ns*/
+width: 4.5em;
+height: 4.5em;
+margin-left: 0.5em;
+}
+
+header > h1 {
+/*    NS Reisverhalen*/
+font-size: 2.375rem;
+line-height: 2.8125rem;
+color: #003082;
+font-weight: 400;
+    margin-left: 1rem; 
+    content:""; 
+    display: none;
+}
+
+
+img[src="assets/image/zoeken_icon.png"] {
+width: 2.1em;
+height: 2em;
+}
+
+
+img[src="assets/image/login_icon.png"]{
+/*Login icon in header
+attribute selector*/
+width: 2.1em;
+height: 2em;
+display: flex;
+justify-content: flex-end;
+justify-items: flex-end;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    vertical-align: middle;
+}
+
+header > input {
+    
+    border: solid 0.03rem rgb(255, 201, 26);
+    padding: -5rem;
+
+    margin-left: -8rem;
+    margin-right: 0.2rem;
+    width: 15%;
+    font-size: 0.8rem;
+ 
+    -webkit-appearance: textfield;
+    text-align: center;
+}
+
+/*---------------------------------- nav-----------------------*/
+
+nav {
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav ~ input, nav ~ img {
+    height: 2em;
+    justify-content: flex-end;
+}
+
+nav ul {
+/*    Overzicht en mijn lijst MOET NAAST ELKAAR*/
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+   /* display: inline-block?????;*/
+    display: flex;
+}
+
+nav ul li a {
+        text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+    font-size: 1.4rem;
+   
+    display: flex;
+}
+
+nav ul li:first-of-type a:hover {
+    border-bottom: .2rem solid rgba(255, 201, 23, .9);
+    padding-bottom: 0.4rem;
+}
+nav ul li:nth-of-type(2) a:hover {
+    border-bottom: .2rem solid rgba(255, 201, 23, .9);
+    padding-bottom: 0.4rem;
+}
+
+
+/*--------------EINDE HEADER------*/
+
+body {
+    text-align: center;
+    background-color: #e5e5e8;
+    box-sizing: border-box;
+    border: none;
+    margin: auto;
+background-color: #e7e6e8;
+
+font-weight: lighter;}
+form {
+   margin: 0 auto;
+    margin-top: 6em;
+    font-size: 1rem;
+    width: 50%;
+    
+    background-color: rgba(255, 201, 23, 1);
+    display:flex; 
+    justify-content: center;
+  
+    
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset {
+    display: flex;
+    -webkit-margin-top: 2px;
+    min-width: -webkit-min-content;
+    text-align: center;
+    padding: 1em;
+    
+}
+
+
+input {  padding:.25em;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  width:100%;
+  transition:all .2s;
+    z-index:2;}
+
+
+
+
+
+
+legend {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: .4em;
+    padding: 1em;
+    margin: 0 auto;
+    border-width: initial;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+label {
+    color: #242856;
+    text-align: center;
+
+}
+
+label {  cursor: default;}
+
+input[id="naam"]:invalid, input[id="email"]:invalid,
+input[id="ww"]:invalid, input[id="hww"]:invalid {
+    border: none;
+}
+
+
+
+input {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    border: solid #242856;
+    height: 3em;
+    padding-left: 1em;
+    width: 20em;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+   
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    text-align: center;
+    
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+        margin: 0 auto;
+    margin-bottom: 1em;
+    font: 1em system-ui;
+    
+}
+
+input, textarea, select, button, meter, progress
+{
+    -webkit-writing-mode: horizontal-tb;
+}
+
+
+input[type="submit"]{
+
+  flex: 0 0 2em;
+    transition: all .2s;
+    font-weight: 400;
+    background-color: #0079d3;
+    color: #fff;
+    line-height: .3625rem;
+    font-size: 1rem;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+
+    transition: box-shadow .15s ease-in-out;
+    box-shadow: inset 0 -0.125rem 0 #005ca0;
+  
+    margin-bottom: 1em;
+}
+    
+
+input[type="submit"]:hover{
+    box-shadow: inset 0 -3.125rem 0 #005ca0;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+/*input#registreren.button {
+
+    display: none;
+    background-color: #0079d2;
+    display: block;
+    padding: 10rem;
+    display: none;
+    
+}*/
+
+
+
+div#popup {
+        display: none;
+    background-color: #0079d2;
+    display: block;
+    padding: 10rem;
+    display: none;
+}
+
+div#popup.toon{
+
+    
+    background-color: #0079d2;
+    display: block;
+    padding: 10rem;
+
+}
+
+.toon {
+ 
+    background-color: #0079d2;
+    display: block;
+    padding: 10rem;
+    
+}
+
+@media screen and (max-width: 60em) {
+    header h1 {
+        display: none;
+    }
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+     aside > h2 {
+        display: none;
+    }
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+    legend {
+    font-size: 1.7rem;}
+    
+
+}
+
+
+@media screen and (max-width: 67.8125em) {
+
+    form { display: grid; }
+}
+
+@media screen and (max-width: 42em) {
+
+    legend {
+    font-size: 1.6rem;
+}
+header > input{
+    font-size: 1.3rem;
+    display: none;
+}
+nav > ul, li  {font-size: 0.8rem;}
+
+
+fieldset > input {
+font: 0.8em system-ui;
+    padding: 0;
+}
+
+.button { 
+padding: 0.8rem;
+font-size: 1rem;
+width: 15em;
+ }
+
+    }
+
+
+
+
+@media screen and (max-width: 35em) {
+ nav > ul, li  {font-size: 0.5rem;}
+
+legend {
+    font-size: 1.4rem;}
+
+.button {
+    padding: 0.8rem;
+font-size: 1rem;}
+
+header > input{
+    display: none;
+}
+
+nav ul li a {
+    font-size: 1.3rem;
+    padding: 0.4rem;
+}
+
+fieldset > input{
+    font: 0.8em system-ui;
+    padding: 0;
+    width: 80%;}
+}
+
+.button{width: 80%;}
+
+}
+
+
+/*-------*/
+
+@media screen and (max-width: 20em) {
+
+    legend {
+    font-size: 1.1rem;
+}
+
+header > input{
+    display: none;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    padding: 0.1rem;
+}
+
+form { width: 70%; 
+
+}
+fieldset > input {
+    font: 0.6em system-ui;
+    padding: 1rem;
+    font-size: 0.5rem;
+}
+.button {
+    width: 93%;
+    margin-left: 0.5rem;
+}
+    }

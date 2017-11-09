@@ -1,0 +1,1014 @@
+/*Colors used: #e5e5e8; grey
+#e9c84e; yellow
+rgba(255, 201, 23, 1); geel
+rgba (0, 48, 130, 1);
+Font-style: Segoe UI*/
+/*var color: (--nsyellow);*/
+
+/*border-style: solid, 0.5em, #fff; */
+/*background-color: rgba(255, 201, 23, 1); yellow*/
+    /*background-color: hsla(0, 0%, 100%, .9); DOORZICHTIG*/
+    /*box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);*/
+
+
+    /*alle boxsizings eruit rbehalve bij reset*/
+    /*alle comments eruit*/
+
+/*
+
+-webkit-transition: all 0.15s ease;
+-moz-transition: all 0.15s ease;
+transition: all 0.15s ease;
+    display: block;
+transition: all 0.15s ease-in-out;
+*/
+
+/*:root{
+    --nsyellow: rgba(255, 201, 23, 1);
+    --nsblue: rgba(0, 48, 130, 1);
+}*/
+@font-face {
+    font-family: "segoe UI";
+    src: url('../assets/fonts/segoeui.ttf') format('truetype');
+}
+
+body,
+body * {
+    font-family: "segoe UI", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*HEADER*/
+header {
+    background-color: hsla(0, 0%, 100%, .9);
+    width: 100%;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    position: fixed;
+    top: 0.2rem;
+    z-index: 99;
+    height: 3.5rem;
+}
+
+header > img:last-of-type {
+    
+        margin-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+}
+
+img[src="assets/image/logo.png"] {
+/*    Het logo van de ns*/
+width: 4.5em;
+height: 4.5em;
+margin-left: 0.5em;
+}
+
+header > h1 {
+/*    NS Reisverhalen*/
+font-size: 2.375rem;
+line-height: 2.8125rem;
+color: #003082;
+font-weight: 400;
+    margin-left: 1rem; 
+    content:""; 
+    display: none;
+}
+
+
+img[src="assets/image/zoeken_icon.png"] {
+width: 2.1em;
+height: 2em;
+}
+
+
+img[src="assets/image/login_icon.png"]{
+/*Login icon in header
+attribute selector*/
+width: 2.1em;
+height: 2em;
+display: flex;
+justify-content: flex-end;
+justify-items: flex-end;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    vertical-align: middle;
+}
+
+header > input {
+    
+    border: solid 0.03rem rgb(255, 201, 26);
+    padding: -5rem;
+    /* padding: 1rem; */
+       margin-left: -8rem;
+    margin-right: 0.2rem;
+    /* width: 20%; */
+    font-size: 0.8rem;
+    /* height: 1rem; */
+    -webkit-appearance: textfield;
+    text-align: center;
+}
+
+/*---------------------------------- nav-----------------------*/
+
+nav {
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav ~ input, nav ~ img {
+    height: 2em;
+    justify-content: flex-end;
+}
+
+nav ul {
+/*    Overzicht en mijn lijst MOET NAAST ELKAAR*/
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+   /* display: inline-block?????;*/
+    display: flex;
+}
+
+nav ul li a {
+        text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+    font-size: 1.4rem;
+   
+    display: flex;
+}
+
+nav ul li:first-of-type a:hover {
+    border-bottom: .2rem solid rgba(255, 201, 23, .9);
+    padding-bottom: 0.4rem;
+}
+nav ul li:nth-of-type(2) a:hover {
+    border-bottom: .2rem solid rgba(255, 201, 23, .9);
+    padding-bottom: 0.4rem;
+}
+/*Dit knippen naar andere pagina  mijn lijstje
+*/
+/*------------Hier begint de body-------------*/
+body {
+    text-align: center;
+    background-color: #e5e5e8;
+}
+
+body, ul {
+
+    color: #003082;
+}
+
+body, fieldset {
+    border: none;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Dit is het blokje met NS verhalen reist met je mee*/
+/*Background image hier in*/
+body > section:first-of-type {
+
+display: flex;
+/* flex-wrap: nowrap; */
+/* padding: 3rem; */
+padding-bottom: 5rem;
+margin-bottom: 3rem;
+margin-top: 2rem;
+/* margin-top: 1rem; */
+background-image: url("../assets/book_background_image.jpg");
+background-size: cover;
+}
+
+section > h1 {
+    width: 19%;
+    height: 5%;
+    padding: 0.5rem;
+    background-color: rgba(255, 201, 23, 0.5);
+    
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: 50rem;
+    margin-left: 65%;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: black;
+    /* color: white; */
+    text-align: center;
+    display: block;
+    position: relative;   
+}
+
+
+/*Aside GEEL VLAK FILTEREN EN SORTEREN*/
+aside {
+
+background-color: rgba(0, 48, 130, 0.5);
+ border-spacing: 0;
+color: white;
+padding: 1.5rem;
+text-align: center;
+vertical-align: middle;
+box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+margin-top: -16em;
+margin-left: 3em;
+    width: 56%;
+    margin-left: 3rem;
+}
+
+
+label {
+    vertical-align: middle;
+    text-align: center;
+cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+aside > h2 {/*titel FILTER OPTIES*/
+margin-top: 0;
+margin-bottom: .625rem;
+font-size: 2.375rem;
+line-height: 2.8125rem;
+color: white;
+font-weight: 400;
+text-align: center;
+display: block;
+position: relative;
+border-spacing: 0;
+vertical-align: middle;
+}
+
+
+.tijdkeuze{
+    font-size: 1.6rem;
+color: rgba(0, 48, 130, 1);
+    font-weight: 200;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.tijdkeuze , input[type="radio"] + label {
+/*    padding-top: 3rem;*/
+}
+
+fieldset > input[type="text"] {
+vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+/*    background-color: transparent;*/
+    padding-left: 2.6875rem;
+    padding-right: 1.9375rem;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 0 0 0 .0625rem;
+    color: #003082;
+  
+    height: 3em;
+    justify-content: center;
+}
+
+
+input[type="radio"] {
+display: none;
+}
+
+input[type="radio"]:checked + label {
+    text-decoration-line: underline;
+}
+
+/*:checked + label for moet hetzelfde zijn als id
+label staat erachter */
+/*input:checked + label {
+
+}*/
+
+.minuten:hover {
+    text-decoration-line: underline;
+    vertical-align: middle;
+    color: white;
+    display: flex;
+    }
+
+.voorkeur {
+    margin-top: 1rem;
+    margin: 0 auto;
+    text-align: inherit;
+    display: none;
+}
+
+input#Preferences {
+    margin-left: 3rem;
+        margin: 0 auto;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    background: #FFF;
+    border: none;
+    width: 1.50rem;
+    height: 1.50rem;
+    cursor: pointer;
+    top: .125rem;
+    border: .0625rem solid #b5b5bc;
+    border-radius: .0625rem;
+    vertical-align: middle;
+    padding: 0.5rem;
+    position: relative;
+}
+
+
+aside input[type="submit"],
+button {
+
+/*1 BUTTONS!!!!!--->Meer opties*/
+min-width: 7.5rem;
+font-weight: 400;
+background-color: #0079d3;
+color: #fff;
+line-height: 1.5625rem;
+font-size: 1rem;
+border: none;
+text-decoration: none;
+transition: box-shadow .15s ease-in-out;
+box-shadow: inset 0; -.125rem 0 #005ca0;
+ height: 2.8125rem;
+padding: .625rem 1.125rem;
+justify-content: center;
+ display: block;
+white-space: nowrap;
+vertical-align: middle;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+div {
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.show {
+    height: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+
+button:hover{
+    box-shadow: inset 0 -3.125rem 0 #005ca0;
+    cursor: pointer;
+}
+
+
+/*DIT IS DE ZOEKEN BUTTON*/
+main > article a, input[type="submit"] {
+    -webkit-appearance: none;
+    font-weight: 400;
+    background-color: #0079d3;
+    color: #fff;
+    line-height: 1.5625rem;
+    font-size: 1rem;
+    border: none;
+    text-decoration: none;
+    transition: box-shadow .15s ease-in-out;
+    box-shadow: inset 0 -.125rem 0 #005ca0;
+    padding: .625rem 1.125rem;
+     display: block;
+    white-space: nowrap;
+    vertical-align: middle;
+       
+}
+
+main > article a:hover, input[type="submit"]:hover {
+    box-shadow: inset 0 -3.125rem 0 #005ca0;
+    cursor: pointer;
+}
+
+
+/*DE HoVER SHOW FILER OPTIES OP BUTTON MEER OPTIES*/
+
+/*---------------BEGIN MAIN-----------------------------*/
+
+
+main * {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+main {
+/*background-color: #e5e5e8; white*/
+display: flex;
+flex-wrap: wrap;
+margin-top: 1em;
+}
+
+main > article {
+    padding: 2rem;
+    
+     background-color: hsla(0, 0%, 100%, .9);
+    box-shadow: 0 0.125rem 0 0 rgba(7,7,33,.15);
+    margin: 0.5rem;
+    width: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+}
+
+main > article:first-of-type {
+
+    background-image:url("../assets/nieuw_aanzien_desktop.png");
+/*    background-repeat: no-repeat;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+main > article:nth-of-type(2) {
+
+    background-image:url("../assets/nieuw_discriminatie_desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+main > article:nth-of-type(3) {
+    background-image:url("../assets/nieuw_lijden_desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main > article:nth-of-type(4) {
+    background-image:url("../assets/book_background_image.jpg");
+    
+}
+
+main > article:nth-of-type(5) {
+    background-image:url("../assets/book_background_image.jpg");
+    background-repeat: no-repeat;
+}
+
+main > article:nth-of-type(6) {
+    background-image:url("../assets/book_background_image.jpg");
+    background-repeat: no-repeat;
+}
+
+
+
+
+section > h2 {
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+    color: #003082;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: -.3125rem;
+}
+
+article footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+article footer * {
+    display: inline-block;
+    height: inherit;
+}
+
+article footer img {
+    width: 4rem;
+}
+
+article footer div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+article footer div,
+article footer span {
+    width: 33%;
+}
+
+
+article > p {
+    text-align: left;
+    color: black;
+/*DIT IS DE BROODTEKST
+*/
+
+}
+article h3 {
+  text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: black;
+    font-size: 1.5rem;
+    /* color: tan; */
+    font-weight: 300;
+    letter-spacing: normal;
+}
+
+article {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, .8) 37%, rgba(255, 255, 255, .8) 100%);
+}
+
+article > * {
+    z-index: 2;
+    width: 100%;
+}
+
+
+/*------------------Download icon javascript---------------*/
+img[src="assets/image/download_icon.png"] {
+    width: 2.5rem;
+    height: 2.5rem;
+/*hier kun je later een transition invoegen*/
+    cursor: pointer;
+}
+
+img#download{
+width: 2rem;
+    height: 2rem;
+   transition-duration: 5s;
+   transition-property: width height;
+  
+/*hier kun je later een transition invoegen*/
+    cursor: pointer;
+
+}
+
+
+
+img#download.laden{
+width: 2.5rem;
+height: 2.5rem;
+background-image: url("../assets/image/download_icon1.png");
+background-repeat: no-repeat;
+background-size: cover;
+
+   /* transition: 3s;*/
+    transition: .2s;
+
+}
+
+/*img[src="assets/image/loading.gif"] TOEVOEGEN EIGEN GIFJE DOWNLOAD LOADING STATE
+
+{ 
+    display: none;
+}
+*/
+/*Zelfde gif met toggle class .laden*/
+/*img[src="assets/image/loading.gif"].laden {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}*/
+    
+img[src="assets/image/download_icon.png"] {
+    width: 2rem;
+    height: 2rem;}
+
+
+/*----------JAVASCRIPT OPSLAAN-------*/
+
+img[src="assets/image/opslaan_icon.png"]
+
+{   width: 2rem;
+    height: 2rem;
+    transition: .2s;
+}
+
+img#opslaan {
+    width: 2rem;
+height: 2rem;
+    transition: .2s;
+}
+
+
+img#opslaan.OpslaanZichtbaar{
+  
+        width: 3rem;
+    height: 3rem;
+    transition: .2s;
+    background-image: url("../assets/image/favorite-full.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 0.3rem; }
+  
+  .OpslaanZichtbaar {
+  
+        width: 3rem;
+    height: 3rem;
+    transition: .2s;
+    background-image: url("../assets/image/favorite-full.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 0.3rem; }
+  
+  }
+  
+ 
+/*    article:nth-of-type(2) > img#opslaan.OpslaanZichtbaar{
+  width: 3rem;
+    height: 3rem;
+    transition: .2s;
+    background-image: url("../assets/image/favorite-full.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 0.3rem; }
+*/
+}
+
+
+
+/*---------------Media queries------*/
+/*----------- --------*/
+
+
+@media screen and (min-width: 80em) { 
+    
+header > input{
+    font-size: 0.8rem;
+}
+    main > article {
+        width: calc(33.3333% - 1rem);
+        margin: 0.5rem;}
+}
+/*-----------tablet max --------*/
+@media screen and (max-width: 62em) {
+    .show {
+
+    height: 5em;
+    display: flex;
+/*    flex-direction: row;*/
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    }
+}
+
+/*-----------tablet max --------*/
+@media screen and (max-width: 60em) {
+    main {
+        flex-direction: column;
+    }
+    main > article {
+        width: 100%;
+        margin: 1rem 0;
+    }
+     nav ul li a {
+        font-size: 1.5rem;
+
+}
+/*-------------------*/
+@media screen and (max-width: 60eem) {
+    header h1 {
+        display: none;
+    }
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+    footer a {font-size: 1.5rem;
+    }
+}
+
+
+/*-----------tablet --------*/
+@media screen and (max-width: 42em) {
+
+    header {
+    justify-content: space-evenly;
+    background-color: hsla(0, 0%, 100%, .9);
+    width: 100%;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    position: fixed;
+    top: 0.1rem;
+    left: 0;
+    z-index: 99;
+    margin-bottom: -3rem;
+    height: 3.8em;
+    }
+
+    header > img [src="assets/image/logo.png"] {
+width: 3.5em;
+height: 3.5em;
+padding: 0.2em;
+    }
+
+    header > input[type="text"] {
+        display: none;
+    }
+
+    header > input {
+        font-size: 1.2rem;
+
+    }
+
+    nav > ul, li  {
+    	font-size: 0.8rem;
+    }
+
+    nav ul li a {
+text-decoration: none;
+color: inherit;
+padding: 0.5em;
+	}
+
+    body > section:first-of-type {
+        display: none;
+    }
+
+aside {
+    margin: 0 auto;
+    margin-top: 6.5rem;
+    margin-bottom: -0.7rem;
+    width: 90%;
+    }
+
+  /*Uitegelicht subkop */
+section > h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    }
+
+/*img[src="assets/image/download_icon.png"] {
+    width: 2.5rem;
+    height: 2.5rem;
+   
+}
+
+img[src="assets/image/opslaan_icon.png"] {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: .2s;
+    }
+
+    img#opslaan {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: .2s;
+}*/
+
+
+main > article a, input[type="submit"]:hover {
+-webkit-appearance: none;
+font-weight: 400;
+background-color: #0079d3;
+color: #fff;
+line-height: 1.5625rem;
+font-size: 1rem;
+border: none;
+text-decoration: none;
+transition: box-shadow .15s ease-in-out;
+box-shadow: inset 0 -.125rem 0 #005ca0;
+padding: 0.5rem 0.5rem;
+white-space: nowrap;
+vertical-align: middle;
+display: block;
+    }
+}
+
+
+/*-----------KLEIN TELEFOON --------*/
+@media screen and (max-width: 35.5em) {
+
+header {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    position: fixed;
+     top: 0.1em;
+     left: 0;
+    z-index: 99;
+     margin-bottom: -3rem;
+    margin-top: 0.1rem;
+    height: 3.8rem;
+    }
+
+     nav ul li a {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+text-decoration: none;
+color: inherit;
+padding: 0.5em;
+font-size: 1.4rem;
+}
+
+nav > ul, li  {font-size: 0.5rem;}
+
+ header > img[src="assets/image/logo.png"] {
+width: 2.5em;
+height: 2.5em;
+margin-left: 0.5em;
+    }
+
+.show {
+    height: 13rem;
+    margin-top: 1rem;
+    width: 90%;
+    display: block;
+    line-height: 2rem;
+    text-align: center;
+
+    }
+
+    img[src="assets/image/download_icon.png"] {
+    width: 2rem;
+    height: 2rem;
+  
+}
+
+img[src="assets/image/opslaan_icon.png"] {
+
+width: 2rem;
+height: 2rem;
+    }
+
+
+}
+
+/*-----------KLEIN TELEFOON --------*/
+/*Tussen hier en hier doet hij vervelend
+@media only screen and (max-width: 60em) and (min-width: 20em)*/  
+@media only screen and (max-width: 29.50em){
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    position: fixed;
+     top: 0.1em;
+     left: 0;
+    z-index: 99;
+     margin-bottom: -3rem;
+    margin-top: 0.1rem;
+    height: 3.8rem;
+    }
+
+     nav ul li a {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+text-decoration: none;
+color: inherit;
+padding: 0.5em;
+font-size: 1rem;
+}
+
+ header > img[src="assets/image/logo.png"] {
+width: 2.5em;
+height: 2.5em;
+margin-left: 0.5em;
+    }
+
+.show {
+    height: 13rem;
+    margin-top: 1rem;
+    width: 90%;
+    display: block;
+    line-height: 2rem;
+    text-align: center;
+
+    } 
+
+    img[src="assets/image/opslaan_icon.png"] 
+    {
+        width: 1.6rem; 
+    	height: 1.6rem;
+    }
+
+
+
+  img[src="assets/image/download_icon.png"] {
+  	 {
+        width: 1.6rem; 
+    	height: 1.6rem;
+    }
+  }
+
+/*----------*/
+@media only screen and (max-width: 60em) and (min-width: 29.375)  {
+main > article {
+        padding: 2rem;
+     padding-left: 15vw; 
+     padding-right: 15vw; 
+     font-size: 2.8vw; 
+
+    width: 100%;
+    margin: rem 0;
+    box-shadow: 0 0.125rem 0 0 rgba(7,7,33,.15);
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 20em) {
+
+    legend {
+    font-size: 1.2rem;
+}
+
+header > input{
+    display: none;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    padding: 0.1rem;
+}
+
+img#download {
+	width: 2rem;
+    height: 2rem;
+}
+img#opslaan {
+    width: 2rem;
+    height: 2rem;
+    transition: .2s;
+    }
+}
+
+/*----------*/
+
+/*---------------------------------Dit is de code voor de login pagina------*/
+legend {
+
+    font-size: 5em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 10em;
+}
+
+
+
+main + footer {
+    background-color: hsla(0, 0%, 100%, .9);
+    width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    vertical-align: middle;
+ /*   margin: 0 auto;*/
+
+
+}
+
+footer a {
+        font-size: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+   /* padding: 0.2rem;*/
+
+}
+
+footer a:hover {
+
+    border-bottom: .2rem solid rgba(255, 201, 23, .9);
+    padding-bottom: 0.1rem;
+}
+
+
+

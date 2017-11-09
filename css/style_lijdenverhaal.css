@@ -1,0 +1,736 @@
+/*Colors used: #e5e5e8; grey
+#e9c84e; yellow
+rgba(255, 201, 23, 1); geel
+rgba (0, 48, 130, 1);
+Font-style: Segoe UI*/
+/*var color: (--nsyellow);*/
+
+/*border-style: solid, 0.5em, #fff; */
+/*background-color: rgba(255, 201, 23, 1); yellow*/
+    /*background-color: hsla(0, 0%, 100%, .9); DOORZICHTIG*/
+    /*box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);*/
+
+
+    /*alle boxsizings eruit rbehalve bij reset*/
+    /*alle comments eruit*/
+
+
+
+/*:root{
+    --nsyellow: rgba(255, 201, 23, 1);
+    --nsblue: rgba(0, 48, 130, 1);
+}*/
+@font-face {
+    font-family: "segoe UI";
+    src: url('../assets/fonts/segoeui.ttf') format('truetype');
+}
+
+body,
+body * {
+    font-family: "segoe UI", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: baseline;
+    }
+
+/*
+    img[src="assets/lijden1.png"] {
+    width: 623px;
+    height: 442px;
+    background-position: 0px 0px, 10px 10px;
+    background-size: 320em; 320em;
+    background-image: linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee 100%),linear-gradient(45deg, #eee 25%, white 25%, white 75%, #eee 75%, #eee 100%);cursor: 'zoom-in'; }
+
+img[src="assets/lijden1.png"] { 
+         
+        margin: 0 auto;
+        display: flex;
+         flex-wrap: nowrap;
+        justify-content: center;
+        vertical-align: middle;
+         
+             padding-bottom: 5rem;
+         margin-top: 1.5rem;
+         background-size: cover;
+    margin-bottom: 3rem;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    
+}
+*/
+
+
+
+
+
+
+
+
+
+/*HEADER*/
+header {
+    background-color: hsla(0, 0%, 100%, .9);
+    width: 100%;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    position: fixed;
+    top: 0.2rem;
+    z-index: 99;
+    height: 3.5rem;
+}
+
+header > img:last-of-type {
+    
+        margin-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+}
+
+img[src="assets/image/logo.png"] {
+/*    Het logo van de ns*/
+width: 4.5em;
+height: 4.5em;
+margin-left: 0.5em;
+}
+
+
+header > h1 {
+/*    NS Reisverhalen*/
+font-size: 2.375rem;
+line-height: 2.8125rem;
+color: #003082;
+font-weight: 400;
+    margin-left: 1rem; 
+    content:""; 
+    display: none;
+}
+
+
+img[src="assets/image/zoeken_icon.png"] {
+width: 2.1em;
+height: 2em;
+}
+
+
+img[src="assets/image/login_icon.png"]{
+/*Login icon in header
+attribute selector*/
+width: 2.1em;
+height: 2em;
+display: flex;
+justify-content: flex-end;
+justify-items: flex-end;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    vertical-align: middle;
+}
+/*---------------------------------- nav-----------------------*/
+
+nav {
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: nowrap;
+
+
+}
+
+
+nav ~ input, nav ~ img {
+    height: 2em;
+    justify-content: flex-end;
+
+}
+
+nav ul {
+/*    Overzicht en mijn lijst MOET NAAST ELKAAR*/
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+   /* display: inline-block?????;*/
+    display: flex;
+}
+
+nav ul li a {
+        text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+    font-size: 1.4rem;
+   
+    display: flex;
+}
+
+nav ul li:first-of-type a:hover {
+    border-bottom: .2rem solid rgba(255, 201, 23, .9);
+    padding-bottom: 0.4rem;
+}
+nav ul li:nth-of-type(2) a:hover {
+    border-bottom: .2rem solid rgba(255, 201, 23, .9);
+    padding-bottom: 0.4rem;
+}
+
+/*------------Hier begint de body-------------*/
+body {
+    text-align: center;
+    background-color: #e5e5e8;
+}
+
+body, ul {
+
+    color: #003082;
+}
+
+body, fieldset {
+    border: none;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/*--------Dit is het blokje met NS verhalen reist met je mee SECTION---------*//*Background image hier in*/
+body > section:first-of-type {
+display: flex;
+padding-bottom: 5rem;
+margin-bottom: 3rem;
+background-image: url("../assets/nieuw_lijden_desktop.png");
+background-size: cover;
+}
+
+#lijdenverhaal {
+    
+    
+}
+
+/*
+lijden {
+    background-color: red;
+    margin-top: 5em;
+    top:5rem;
+    padding-bottom: 5rem;
+margin-bottom: 3rem;
+background-image: url('../assets/nieuw_lijden_desktop.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+background-size: cover;
+z-index: 1;
+width: 100%;
+    height: 50%;
+}
+*/
+
+
+/*
+/---------------------------------------Mediaq-----/*//*---------------Media queries------*/
+
+
+@media screen and (max-width: 60rem) {
+    header h1 {
+        display: none;
+    }
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+    footer a {font-size: 1.5rem;}
+}
+
+
+/*-----------SECTION MET ACHTERGROND elk formaat onder iphone 7----------*/
+@media screen and (max-width: 42em) {
+    header {
+        display: flex;
+        vertical-align: middle;
+        align-items: space-evenly;
+background-color: hsla(0, 0%, 100%, .9);
+width: 100%;
+box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+position: fixed;
+top: -0.4em;
+left: 0;
+z-index: 99;
+margin-bottom: -3rem;
+height: 3.6em;
+    }
+
+    header > img [src="assets/image/logo.png"] {
+width: 3.5em;
+height: 3.5em;
+padding: 0.2em;
+    }
+
+    header > input[type="text"] {
+        display: none;
+    }
+
+    nav ul li a {
+text-decoration: none;
+color: inherit;
+padding: 0.5em;
+font-size: 1.5
+}
+
+    body > section:first-of-type {
+        display: none;
+    }
+
+aside {
+    margin: 0 auto;
+    margin-top: 6.5rem;
+    margin-bottom: -0.7rem;
+    width: 90%;
+    }
+  /*Uitegelicht subkop */
+section > h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    }
+
+img[src="assets/image/download_icon.png"] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+img[src="assets/image/opslaan_icon.png"]{
+width: 1.5rem;
+height: 1.5rem;
+    }
+
+main > article a, input[type="submit"]:hover {
+-webkit-appearance: none;
+font-weight: 400;
+background-color: #0079d3;
+color: #fff;
+line-height: 1.5625rem;
+font-size: 1rem;
+border: none;
+text-decoration: none;
+transition: box-shadow .15s ease-in-out;
+box-shadow: inset 0 -.125rem 0 #005ca0;
+padding: 0.5rem 0.5rem;
+white-space: nowrap;
+vertical-align: middle; 
+display: block;
+    }
+}
+
+
+/*KLEIN TELEFOON */
+@media screen and (max-width: 35.5rem) {
+
+      header {
+        display: flex;
+        vertical-align: middle;
+        align-items: space-evenly;
+background-color: hsla(0, 0%, 100%, .9);
+width: 100%;
+box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+position: fixed;
+top: -1.2em;
+left: 0;
+z-index: 99;
+margin-bottom: -3rem;
+margin-top: 1rem;
+height: 4em;
+    }
+
+     nav ul li a {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+text-decoration: none;
+color: inherit;
+padding: 0.5em;
+font-size: 1.4rem;
+}
+
+ header > img[src="assets/image/logo.png"] {
+width: 2.5em;
+height: 2.5em; 
+margin-left: 0.5em;
+
+    }
+  }
+
+/*--------*/
+/*
+@media screen and (max-width: 990px) {
+input#Preferences, input[type="checkbox"] 
+    {
+align-self: flex-end;
+display: flex;
+margin-bottom: -2em;}
+
+input[type="checkbox"] {
+ background: #FFF;
+    border: none;
+width: 1.50rem;
+height: 1.50rem;
+cursor: pointer;
+border: .0625rem solid #b5b5bc;
+ border-radius: .0625rem;
+vertical-align: middle;
+}
+    }
+*/
+
+
+
+@media screen and (max-width: 62em){
+.minuten {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2em;
+}
+
+.tijdkeuze {display: flex;
+    flex-direction: column;
+    padding-right: 2em;}
+    }
+}
+/*--------*/
+
+
+@media screen and (min-width: 80em) { 
+    
+    main > article {
+        width: calc(33.3333% - 1rem);
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 60em) { 
+    main {
+        flex-direction: column;
+    }
+    main > article {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+}
+
+
+@media screen and (min-width: 62em) {
+    .tijdkeuze {display: flex;
+        flex-direction: column;}
+    .minuten {display: flex;
+        flex-direction: column;}
+
+}
+/*20 em*/
+
+
+
+/*---------------------------------Dit is de code voor de login pagina------*/
+legend {
+
+    font-size: 5em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 10em;
+
+}
+
+main + footer {
+    background-color: hsla(0, 0%, 100%, .9);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+footer a {
+    font-size: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+
+footer a:hover {
+
+    border-bottom: .2rem solid rgba(255, 201, 23, .9);
+    padding-bottom: 0.4rem;
+}
+
+
+/*---------------------------------VERHALEN PAGINA PIJN/LIJDEN------*/
+
+section > h2 {
+    display: none;
+}
+
+.lijden{
+    top: 20em;
+    background-image: url("..//assets/nieuw_lijden_desktop.png");
+      background-size: contain;
+    background-repeat: no-repeat;
+    padding: 35%;
+    margin-top: 3em;
+    height: -webkit-fill-available;
+    box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+}
+
+
+.aanzien{
+  top: 10em;
+    background-image: url(..//assets/nieuw_aanzien_desktop.png);
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+     margin-top: 5em; 
+    /* margin-bottom: 1em; */
+    margin-left: 4em;
+    padding: 27%;
+    justify-content: center;
+    /* height: -webkit-fill-available; */
+    /* width: 80%; */
+    /* display: flex; */
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+}
+
+.discriminatie {
+
+    display: flex;
+    background-image: url(..//assets/nieuw_discriminatie_desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*width: 100em;*/
+    /* margin: 0 auto; */
+    /*margin-top: 4em;*/
+    height: 80rem;
+    /* margin-bottom: 8rem; */
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    /* margin-right: 10rem; */
+    margin-right: -10rem;
+    margin-left: -9rem;}
+
+
+.gif1 {
+    
+    
+        background-image: url(..//assets/aanzien__diamant_bewerkt.gif);
+    z-index: 98;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    background-size: cover;
+    margin-top: 5em;
+    display: inline-block;
+    width: 28%;
+    height: 65%;
+    padding-top: -6em;
+    padding-left: -3em;
+    margin: 0 auto;
+    margin-top: -10e;
+    align-content: center;
+    /* height: -webkit-fill-available; */
+    position: absolute;
+    display: none;
+    
+    
+}
+
+.img1{
+      background-image: url("http://data.whicdn.com/images/58708000/large.gif");
+    background-size:cover;
+  background-position:center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  font-family:Roboto;
+  font-weight:200;
+  text-transform:uppercase;
+    margin-bottom: -3rem;
+}
+
+p {  
+    font-size:5rem;
+    text-align:center;
+}
+p {
+    letter-spacing:2rem;
+    text-align:center;
+    margin-top:1em;
+}
+embed{
+  border:1px solid red;
+}
+
+.gif2 {
+      background-image: url(..//assets/lijden_gif_bewerkt.gif);
+    z-index: 98;
+    /* background-repeat: no-repeat; */
+    /* background-color: red; */
+    /* background-size: cover; */
+    /* padding: 2rem; */
+    /* margin-top: 35rem; */
+    /* margin-left: -16rem; */
+    /* width: 63rem; */
+    /* height: 93%; */
+    /* margin: 0 auto; */
+    /* height: -webkit-fill-available; */
+    position: absolute;
+    /* animation-delay: 20s; */
+    /* transition: -10s; */
+    /* text-overflow: inherit; */
+    /* transition-property: unset; */
+    /* transform-style: preserve-3d; */
+    /* opacity: 0.3; */
+    
+    margin-top: 8rem;
+    margin-left: 5rem;
+    width: 90%;
+    height: 40rem;
+}
+
+
+
+.gif4 {
+        background-image: url(..//assets/geert_bewerkt.gif);
+   
+position: relative;
+padding: 10rem;
+background-repeat: no-repeat;
+background-size: contain;
+/* margin-top: 5rem; */
+margin: 0 auto;
+margin-left: 40rem;
+/* width: 45rem; */
+/* height: 56%; */
+transition: ease-in-out 10s;
+transition: ease-out 2s;
+animation-duration: 4s;
+margin-bottom: -10rem;
+}
+
+.gif5 {
+    background-image: url(..//assets/gif_background_wilders.gif);
+    position: relative;
+    width: 100%;
+    height:90%;
+    background-size: cover; 
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    vertical-align: middle;
+    /*display: flex;*/
+    justify-content: center;
+    align-content: center;  
+    overflow: hidden;
+    z-index: 80;   
+
+
+
+}
+
+
+
+
+/*0----------------------------------------*/
+
+
+/*
+@media screen and (min-width: 80em) { 
+    
+.lijden { 
+    background-image: url("..//assets/nieuw_lijden_desktop.png");
+    padding-bottom: 9.5%; 
+    }
+}
+*/
+
+/*0----------------------------------------*/
+ @media only screen and (max-width: 62em) {
+    .lijden {
+    background-image: url("..//assets/nieuw_lijden_tablet.png");
+    }
+    .aanzien{
+   background-image: url(..//assets/nieuw_aanzien_tablet.png);
+    background-size: cover;
+    width: max-content;
+    height: max-content;
+    background-position: bottom;
+    /* padding: 10rem; */
+    margin: 0 auto;
+    top: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 45rem;
+    }
+     .discriminatie{
+    background-image: url("..//assets/nieuw_discriminatie_ipad.png");
+         padding-bottom: 41%;
+    }
+}
+/*0----------------------------------------*/
+@media only screen and (max-width: 40em) {
+    
+  .lijden {
+    
+        background-image: url(..//assets/nieuw_lijden_mobiel.png);
+  
+    background-size: cover;
+   
+    align-items: unsafe;
+    vertical-align: middle;
+ 
+    background-position: center;
+    width: -webkit-fill-available;
+    height: 80rem;
+    }
+
+    .aanzien{
+    background-image: url("..//assets/nieuw_aanzien_mobiel.png");
+        padding-bottom: 45%;
+    }
+     .discriminatie{
+    background-image: url("..//assets/nieuw_discriminatie_iphone.png");
+         padding-bottom: 41%;
+    }
+}
+
+/*0----------------------------------------*/
+/*
+@media only screen and (min-width: 30em){ 
+    
+    .lijden{
+    background-image: url("..//assets/nieuw_lijden_mobiel.png");
+        padding-bottom: 9.5%;
+    }
+
+
+    .aanzien{
+    background-image: url("..//assets/nieuw_aanzien_mobiel.png");
+    padding-bottom: 146%;
+    }
+     .discriminatie{
+    background-image: url("..//assets/nieuw_discriminatie_iphone.png");
+    padding-bottom: 132%;
+    }
+}
+    
+*/
+    
+/*    -------------------------*/
+
+
+/*    -------------------------*/
+
+
+
